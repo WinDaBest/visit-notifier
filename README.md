@@ -55,3 +55,23 @@ mkdir ~/visit-notifier
 cd ~/visit-notifier
 nano docker-compose.yml # Or use compose.yaml
 ```
+Then paste the code in and edit it if you want to. Exit and save with "ctrl+o" and "enter" and "ctrl+x"
+
+4. Copy the example config and run:
+```
+cd ~/visit-notifier
+nano config.yaml
+```
+Then paste the code in and edit it. Exit and save with "ctrl+o" and "enter" and "ctrl+x"
+
+5. To start it up run:
+```
+docker compose up -d # Or run "docker compose up" to see the logs.
+```
+6. Get you local ip address. Run:
+```
+hostname -I | awk '{print $1}'
+```
+7. With your local ip address go to the website "YOUR.LOCAL.IP.ADDRESS:8080" (Change "YOUR.LOCAL.IP.ADDRESS" to your local ip address)
+
+## Now to installed it!
